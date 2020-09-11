@@ -1,0 +1,73 @@
+.sectionHeader{
+  background-image: url('../../assets/images/header.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+
+}
+
+.headerTitle{
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.title{
+  display: flex;
+  text-align: center;
+  padding-top: 10%;
+  color: $portafolio-white;
+  font-family: $lobster;
+  font-weight: $bold;
+  font-size: 80px;
+  text-shadow: 3px 3px 5px rgba(0,0,0,0.6);
+  justify-content: center;
+}
+
+.subtitle{
+  text-align: center;
+  color: $portafolio-orange;
+}
+
+
+@media screen and (max-width: 600px){
+  .title{
+    padding-top: 40%;
+    font-size: 50px;
+  }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 991px){
+  .title{
+    padding-top: 50%;
+    margin-top: 50px;
+  }
+
+  .subtitle{
+    font-size: 40px;
+  }
+
+  .photoDalia{
+    margin-top: 90px;
+  }
+}
+
+
+
+@media only screen and
+(height: 1024px) and (width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape), 
+(width: 1024px) and (height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait)  {
+
+  .title{
+    padding-top: 50%;
+    margin-top: 50px;
+  }
+
+  .subtitle{
+    font-size: 40px;
+  }      
+}
+
